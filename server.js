@@ -78,7 +78,11 @@ fs.appendFile('server.log', `${now}  ${req.method} ${req.url} \n`,(err) =>{
 
 // });
 
-
+app.get('/projects',(req,resp)=>{
+  resp.render('projects.hbs',{
+      pageTitle: 'Projects Page'
+  });
+});
 
 app.use(express.static(__dirname + '/public'));
 
