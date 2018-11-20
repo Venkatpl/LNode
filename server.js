@@ -54,15 +54,15 @@ fs.appendFile('server.log', `${now}  ${req.method} ${req.url} \n`,(err) =>{
 
 // too keep the maintance page
 
-    app.use((req,resp,next) =>{
-    resp.render('maint.hbs',{
-              pageTitle: 'Error',
-               pageHead: 'Error PAGE',
-            currYear: new Date().getFullYear(),
-            pageHead: 'Error Page'
-        });
-        next()
-});
+//     app.use((req,resp,next) =>{
+//     resp.render('maint.hbs',{
+//               pageTitle: 'Error',
+//                pageHead: 'Error PAGE',
+//             currYear: new Date().getFullYear(),
+//             pageHead: 'Error Page'
+//         });
+//         next()
+// });
 
 
 // app.use((req,resp,next) =>{
